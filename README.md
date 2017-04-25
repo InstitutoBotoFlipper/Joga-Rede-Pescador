@@ -1,2 +1,2 @@
-# JogaRede
-Javascript Game - Arte-Educação Ambiental
+# Joga Rede Pescador
+Arte-Educação Ambiental
