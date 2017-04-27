@@ -4,13 +4,14 @@ function preload() {
 	game.load.image('sky', 'assets/sky.png');
 	game.load.image('ground', '../assets/platform.png');
 	game.load.image('star', '../assets/star.png');
-	game.load.spritesheet('dude', '../assets/dude.png', 32, 48);
+	game.load.image('boto', '../assets/boto.png');
+	// game.load.spritesheet('boto', '../assets/boto.png', 32, 48);
 }
 
 var pic;
 function create() {
 	game.add.sprite(0, 0, 'sky');
-  pic = game.add.sprite(200, 300, 'dude');
+  pic = game.add.sprite(200, 300, 'boto');
   pic.alpha = 0.5;
   pic.anchor.set(0.5);
   pic.scale.set(0.6);
@@ -24,13 +25,13 @@ function onTap(pointer, doubleTap) {
     if (doubleTap)
     {
         //  They double-tapped, so swap the image
-        if (pic.key === 'dude')
+        if (pic.key === 'boto')
         {
             pic.loadTexture('star');
         }
         else
         {
-            pic.loadTexture('dude');
+            pic.loadTexture('boto');
         }
     }
     else
